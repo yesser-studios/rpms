@@ -16,7 +16,7 @@ URL:            https://crates.io/crates/yesser-todo-cli
 Source:         %{crates_source}
 Source:         yesser-todo-cli-1.2.0-vendor.tar.xz
 
-BuildRequires:  cargo-rpm-macros >= 26,openssl >= 3
+BuildRequires:  cargo-rpm-macros >= 26,openssl-devel >= 3
 
 %global _description %{expand:
 A to-do CLI written in Rust.}
