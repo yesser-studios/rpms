@@ -7,14 +7,14 @@
 %global crate yesser-todo-cli
 
 Name:           rust-yesser-todo-cli
-Version:        1.1.2
+Version:        1.2.0
 Release:        %autorelease
 Summary:        To-do CLI written in Rust
 
 License:        MIT
 URL:            https://crates.io/crates/yesser-todo-cli
 Source:         %{crates_source}
-Source:         yesser-todo-cli-1.1.2-vendor.tar.xz
+Source:         yesser-todo-cli-1.2.0-vendor.tar.xz
 
 BuildRequires:  cargo-rpm-macros >= 26
 
