@@ -3,7 +3,9 @@ SUBDIR := $(shell dirname $(spec))
 srpm:
 	dnf install -y cargo spectool rpm-build git bash tar rpmspec
 
-	cd $(SUBDIR)/..
+	echo $(spec)
+	echo $(SUBDIR)
+	pwd
 	./vendor.sh $(SUBDIR)/*.spec
 
 	rpmbuild -bs \
