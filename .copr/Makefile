@@ -1,7 +1,6 @@
 SUBDIR := $(shell dirname $(spec))
 
 srpm:
-	@echo $(REASON)
 	dnf install -y cargo spectool rpm-build git bash tar rpmspec
 
 	@if [ "$$(git diff --name-only HEAD^ HEAD | grep -E "^$(PKG_DIR)/")" = "" ]; then \
