@@ -9,4 +9,4 @@ srpm:
 	rpmbuild -bs \
 	  --define "_sourcedir $(SUBDIR)" \
 	  --define "_srcrpmdir $(outdir)" \
-	  $(spec)
+	  ./*.spec
